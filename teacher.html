@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - CampusMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CampusMate - Teacher Dashboard</h1>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+
+        <div class="dashboard">
+            <div class="create-notice">
+                <h2>Create New Notice</h2>
+                <form id="noticeForm">
+                    <div class="form-group">
+                        <label>Notice Title:</label>
+                        <input type="text" id="noticeTitle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Notice Type:</label>
+                        <select id="noticeType" required>
+                            <option value="exam">Exam</option>
+                            <option value="event">Event</option>
+                            <option value="general">General</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description:</label>
+                        <textarea id="noticeDescription" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Date:</label>
+                        <input type="date" id="noticeDate" required>
+                    </div>
+
+                    <button type="submit">Publish Notice</button>
+                </form>
+            </div>
+
+            <div class="notices-list">
+                <h2>All Notices</h2>
+                <div id="noticesList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        checkAuth('teacher');
+        loadNotices();
+    </script>
+</body>
+</html>

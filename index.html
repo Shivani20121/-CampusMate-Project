@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusMate - Digital Notice Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CampusMate</h1>
+            <p>Digital Notice Board for College</p>
+        </div>
+
+        <!-- Added introduction section -->
+        <div class="intro-section">
+            <h2>Welcome to CampusMate</h2>
+            <p>CampusMate is a modern digital notice board system designed to make communication easy between teachers and students. Stay updated with all college announcements, exam schedules, and important events in one place.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>For Teachers</h3>
+                    <p>Create and publish notices about exams, events, and important announcements instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>For Students</h3>
+                    <p>View all notices in one place and never miss any important college updates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-box">
+            <h2>Login</h2>
+            
+            <div class="role-selection">
+                <label>
+                    <input type="radio" name="role" value="teacher" checked>
+                    Teacher
+                </label>
+                <label>
+                    <input type="radio" name="role" value="student">
+                    Student
+                </label>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="info-text">Enter any email and password to login</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

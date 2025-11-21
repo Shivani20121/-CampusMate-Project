@@ -1,4 +1,4 @@
-ampusMate – Digital Notice Board System
+CampusMate – Digital Notice Board System
 
 📚 A Smart Web-Based Notice Management System for Schools & Colleges
 <img width="1096" height="596" alt="image" src="https://github.com/user-attachments/assets/329e6be4-9f39-485c-988c-a9143532e4ab" />
